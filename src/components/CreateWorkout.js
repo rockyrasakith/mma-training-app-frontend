@@ -22,7 +22,7 @@ function CreateWorkout() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const response = await fetch("/create_workouts", {
+    const response = await fetch("/api/create_workouts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

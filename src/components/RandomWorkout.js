@@ -10,7 +10,7 @@ const RandomWorkout = () => {
     const fetchWorkout = async () => {
       setLoading(true);
       try {
-        const res = await fetch("/random_workout");
+        const res = await fetch("/api/random_workout");
         const data = await res.json();
         setWorkout(data);
         setLoading(false);

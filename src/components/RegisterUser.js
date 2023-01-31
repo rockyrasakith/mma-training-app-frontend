@@ -16,7 +16,7 @@ function RegisterUser() {
     event.preventDefault();
     try {
       // Send a post request to create a new user
-      const response = await fetch("/new_user", {
+      const response = await fetch("/api/new_user", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
